@@ -1,0 +1,16 @@
+{
+  "name": "back-end_for-respon",
+  "version": "1.0.0",
+  "description": "Response \r 4\r 5\r 6\r 7\r 1\r For Legend\r 22/1/2025\r Making your 1st api poge.\r S1.Create repo in git, create readmd there.\r S2. Clone it to vs code.\r S3. npm init -y\r npm i express dotenv\r create file index.js\r create file name (.env)\r The below we should write in the index.js{\r const express = require (“express”);\r const app = express();\r const port = 3000;\r app.get(‘/assistant/greet’ ,(req,res)=>{\r // go to thunder client (in Get, method (https://localhost:3000/assistant/greet)\r // in parameter(write name in query)\r const name = req.query.name; =>// if u write in json format we should write as \r (req.json.name);\r const date = new Date().getDay();\r const dayMessage = [ // greetings that given by kalvium in assignment]\r res.send ({\r “WelcomeMessage” : `hello, ${name}! Welcome to our assistant app!”\r “dayMessage” : dayMessage[date]\r })\r app.listen(port,()=>{\r  console.log(`Server is running in port ${port}`)\r })\r After writing the code run the server by the below command{ \r node —watch index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
